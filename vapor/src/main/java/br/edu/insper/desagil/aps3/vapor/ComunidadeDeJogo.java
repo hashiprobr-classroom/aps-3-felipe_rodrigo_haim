@@ -15,7 +15,7 @@ public class ComunidadeDeJogo extends Comunidade {
     public void adicionaMembro(Usuario u){
         String apel = u.getApelido();
         if (jogo.avaliado(apel)){
-            membros.add(u);
+            super.adicionaMembro(u);
         }
     }
 }
